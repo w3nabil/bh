@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'tatsama';
+    src: url('./fonts/Tatsama/normal.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'tatsama-italic';
+    src: url('./fonts/Tatsama/italic.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: 0;
+    line-height: 1.5;
+}
+
+
+body {
+    padding: 30px;
+    margin: 0;
+    font-family: 'tatsama';
+    font-size: 16px;
+    line-height: 2;
+    color: #F8F9F7;
+    background: linear-gradient(#010519 0%, #091032 100%);
+    min-height: 100vh;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 200;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+p {
+    color: #ECECEC;
+}
+
+/* TEXT Alignment */
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+/* TEXT Color */
+.red {
+    color: #E70202;
+}
+
+.green {
+    color: #21E702;
+}
+
+.blue {
+    color: #021FE7;
+}
+
+.yellow {
+    color: #E7E702;
+}
+
+.purple {
+    color: #E702E7;
+}
+
+.orange {
+    color: #E77A02;
+}
+
+/* Special Bangladesh Flag color text*/
+.bangladesh {
+    background: linear-gradient(to right, #006a4e, #006a4e 50%, #f42a41 50%, #f42a41);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* display & postion */
+
+.flex {
+    display: flex;
+}
+
+.fixed {
+    position: fixed;
+}
+
+/* TEXT Decoration */
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-family: 'tatsama-italic';
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.overline {
+    text-decoration: overline;
+}
+
+/* Themes */
+.dark-theme {
+    color: #F8F9F7;
+    background: linear-gradient(#010519 0%, #091032 100%);
+    min-height: 100vh;
+}
+
+/* HTML Buttons */
+
+.btn {
+    background-color: #E70202;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Default Anchor tag*/
+
+a {
+    color: #0068E5;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #E70202;
+    font-size: 110%;
+}
+
+/* Stock Preloader */
+.preloader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px; 
+    margin-left: -20px; 
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
+/* CARD Property */
+.btn-card {
+    background-color: #E70202;
+    color: #fff;
+    border: 2;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.card-body {
+    margin: 10px;
+}
+
+.card-body a {
+    color: #fff;
+    text-decoration: none;   
+}
+
+.card-body a:hover {
+    color: #fff;
+    font-size: 100%;
+}
+
+:root {
+    --shadow-color: 0deg 0% 0%;
+    --shadow-elevation-low:
+      0.2px 0.4px 0.7px hsl(var(--shadow-color) / 0),
+      0.6px 1.3px 2.1px hsl(var(--shadow-color) / 0.08);
+    --shadow-elevation-medium:
+      0.2px 0.4px 0.7px hsl(var(--shadow-color) / 0),
+      2.8px 6.5px 10.6px hsl(var(--shadow-color) / 0.12);
+    --shadow-elevation-high:
+      0.2px 0.4px 0.7px hsl(var(--shadow-color) / 0),
+      3.3px 7.5px 12.3px hsl(var(--shadow-color) / 0.1),
+      10px 23.1px 37.8px hsl(var(--shadow-color) / 0.19);
+  }
+
+.card {
+    display: flex;
+    border: #091032 1px solid;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+    flex-wrap: coloumn;
+}
+
+.card-child {
+    box-shadow: var(--shadow-elevation-high);
+    width: 100%;
+    text-align: left;
+    border: #091032 2px solid;
+    border-radius: 5px;
+    margin-right: 30px;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.card-child:last-child {
+    margin-right: 0;
+} 
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card-child {
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
+        border: #091032 1px solid;
+        border-radius: 2px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .card-child:last-child {
+        margin-bottom: 0;
+    } 
+    
+}
+
+
+
+
+
