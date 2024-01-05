@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BHash</title>
+  <link rel="preload" as="style" href="./instant.css">
+  <link rel="preload" as="script" href="./instant.js">
+  <link rel="stylesheet" href="./instant.css">
+  <link rel="stylesheet" href="./web-src/index.css">
+  <script src="./instant.js"></script>
+  <script src="./web-src/index.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li class="logo"><a href=""><img src="./web-src/img/bcss.png" alt="" height="40px" width="40px"></a></li>
+      <li><a href="">HOME</a></li>
+      <li><a href="">DONATE</a></li>
+      <li><a href="">ABOUT ME</a></li>
+    </ul>
+  </div>
+  <div class="preloader"></div>
+  <div class="monitor">
+    <div class="monitor-1">
+      <ul>
+        <li><a href="#quickstart">ইন্সটল এবং ব্যবহার</a></li>
+        <li><a href="./raw.html">RAW সি.এস.এস ডকুমেন্টেশন</a></li>
+        <li><a href="#card">কার্ড</a></li>
+        <li><a href="#form">ফর্ম</a></li>
+        <li><a href="#button-bh">বাটন</a></li>
+        <li><a href="#preloader-bh">প্রিলোডার</a></li>
+        <li><a href="#table-bh">টেবিল</a></li>
+        <li><a href="#navbar-bh">নেব-বার</a></li>
+        <li><a href="https://github.com/w3nabil/bh?tab=MIT-1-ov-file">কোড লাইসেন্স</a></li>
+        <li><a href="#thankyou">ধন্যবাদ</a></li>
+      </ul>
+    </div>
+    <style>
+    </style>
+    <div class="monitor-2">
+      <div class="what-is-bhash">
+        <h1 class="text-left bhash-h1"># BHash</h1>
+        <p class="text-left bhash-text">BHash is a Bangla <a href="https://en.wikipedia.org/wiki/CSS"> <img src="./web-src/img/CSS3.png" alt="" height="18px" width="auto">CSS</a> and/or <a href="https://en.wikipedia.org/wiki/JavaScript"><img src="./web-src/img/js.png" alt="Javascript Logo" width="auto" height="16px"></a> library that helps you to make your website more beautiful and attractive. It is a very simple and easy to use library. You can use it in your website by just adding a single line of code.</p>
+      </div>
+      <div id="quickstart" class="quickstart">
+        <h1 class="quickstart-h1 text-left"># Quick Start</h1>
+        <p class="quickstart-guide text-left">
+          1. Create a <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">HTML5</a> index.html file in your root project. Make sure to add viewport. Or you can copy the code mentioned below and paste it in your IDE. </p>
+          <div class="code-box">
+            <div class="misc">
+              <h4 class="red text-left filename">&nbsp; <img src="./web-src/img/folder.png" alt="BCSS" height="16px" width="auto"> ./index.html</h4>
+              <h4 class="text-right">
+                <button onclick="html5basiccode()" class="copy-btn">
+                  <p class="copy-button-1"><img src="./web-src/img/copy.png" height="14px" width="auto"> Copy Code </p>
+                </button>
+              </h4>
+            </div>
+            <code id="html5basiccode" class="custom-code">
+&lt;<span class="tag">!DOCTYPE</span> <span class="at">html</span>&gt; 
+&lt;<span class="tag">html</span> <span class="at">lang</span>=<span class="atv">"en"</span>&gt;
+&lt;<span class="tag">head</span>&gt;
+  &lt;<span class="tag">meta</span> <span class="at">charset</span>=<span class="atv">"UTF-8"</span>&gt;
+  &lt;<span class="tag">meta</span> <span class="at">name</span>=<span class="atv">"viewport"</span> <span class="at">content</span>=<span class="atv">"width=device-width, initial-scale=1.0"</span>&gt;
+  &lt;<span class="tag">title</span>&gt;My First Website&lt;<span class="tag">/title</span>&gt; 
+&lt;<span class="tag">/head</span>&gt; 
+&lt;<span class="tag">body</span>&gt; 
+  &lt;<span class="tag">h1</span>&gt;Hello World&lt;<span class="tag">/h1</span>&gt; 
+&lt;<span class="tag">/body</span>&gt; 
+&lt;<span class="tag">/html</span>&gt; 
+            </code>
+          </div>
+          <p class="quickstart-guide text-left">
+            2. Add our CDN links in your &lt;<span class="tag">head</span>&gt; tag. You can copy the code mentioned below and paste it inside your <span class="tag">head</span> tag.</p>
+          <div class="code-box">
+            <div class="misc">
+              <h4 class="red text-left filename">&nbsp; <img src="./web-src/img/folder.png" alt="BCSS" height="16px" width="auto"> ./index.html</h4>
+              <h4 class="text-right">
+                <button onclick="bhashlink()" class="copy-btn">
+                  <p class="copy-button-2"><img src="./web-src/img/copy.png" height="14px" width="auto"> Copy Code </p>
+                </button>
+              </h4>
+            </div>
+            <code id="bhashlink" class="custom-code">
+  <span class="htmlcomment">&lt;!-- BHash CSS --&gt;</span>
+  &lt;<span class="tag">link</span> <span class="at">rel</span>=<span class="atv">"stylesheet"</span> <span class="at">href</span>=<span class="atv">"https://w3nabil.github.io/bh/instant.css"</span>/&gt;
+  <span class="htmlcomment">&lt;!-- BHash JS --&gt;</span>
+  &lt;<span class="tag">script</span> <span class="at">src</span>=<span class="atv">"https://w3nabil.github.io/bh/instant.js"</span>&gt;&lt;<span class="tag">/script</span>&gt;
+            </code>
+          </div>
+
+          <p class="quickstart-guide text-left">
+          3. Run your file and see the result in your website :)) <br><br> 
+
+          Also Read :  You can also call our library in preload which is recommended for large traffic website.</p> 
+
+          <div class="code-box">
+            <div class="misc">
+              <h4 class="red text-left filename">&nbsp; <img src="./web-src/img/folder.png" alt="BCSS" height="16px" width="auto"> ./index.html</h4>
+              <h4 class="text-right">
+                <button onclick="bhashpreloadcode()" class="copy-btn">
+                  <p class="copy-button-3"><img src="./web-src/img/copy.png" height="14px" width="auto"> Copy Code </p>
+                </button>
+              </h4>
+            </div>
+            <code id="bhashpreloadcode" class="custom-code">
+  <span class="htmlcomment">&lt;!-- Preload the CSS and JS file --&gt;</span>
+  &lt;<span class="tag">link</span> <span class="at">rel</span>=<span class="atv">"preload"</span> <span class="at">href</span>=<span class="atv">"https://w3nabil.github.io/bh/instant.css"</span> <span class="at">as</span>=<span class="atv">"style"</span>/&gt;
+  &lt;<span class="tag">link</span> <span class="at">rel</span>=<span class="atv">"preload"</span> <span class="at">href</span>=<span class="atv">"https://w3nabil.github.io/bh/instant.js"</span> <span class="at">as</span>=<span class="atv">"script"</span>/&gt;
+  <span class="htmlcomment">&lt;!-- Call the CSS and JS file --&gt;</span>
+  &lt;<span class="tag">link</span> <span class="at">rel</span>=<span class="atv">"stylesheet"</span> <span class="at">href</span>=<span class="atv">"https://w3nabil.github.io/bh/instant.css"</span>/&gt;
+  &lt;<span class="tag">script</span> <span class="at">src</span>=<span class="atv">"https://w3nabil.github.io/bh/instant.js"</span>&gt;&lt;<span class="tag">/script</span>&gt;
+            </code>
+          </div>
+          <p class="quickstart-guide text-left">4. Read our documentation</p>
+      </div>
+      <div class="CDN-links">
+      <h1 class="cdn-link-h1 text-left"># CDN Links</h1>
+      <table class="cdn-link">
+        <tr>
+          <td>File type</td>
+          <td>URL</td>
+        </tr>
+        <tr class="cdn-link-1">
+          <td class="tag">CSS</td>
+          <td class="atv">https://w3nabil.github.io/bh/instant.css</td>
+        </tr>
+        <tr class="cdn-link-2">
+          <td class="tag">JS</td>
+          <td class="atv">https://w3nabil.github.io/bh/instant.js</td>
+        </tr>
+      </table>
+     </div>
+    <div class="code-box">
+      <div class="misc">
+        <h4 class="red text-left filename">&nbsp; <img src="./web-src/img/folder.png" alt="BCSS" height="16px" width="auto"> ./index.html</h4>
+        <h4 class="text-right">
+          <button onclick="copyCode()" class="copy-btn">
+            <p class="copy-button"><img src="./web-src/img/copy.png" height="14px" width="auto"> Copy Code </p>
+          </button>
+        </h4>
+      </div>
+
+      <!--
+      <code id="myCode" class="custom-code">
+        &lt;<span class="tag">div</span> <span class="at">class</span>=<span class="atv">"card"</span>&gt;
+        &lt;<span class="tag">div</span> <span class="at">class</span>=<span class="atv">"card-child"</span>&gt;
+        &lt;img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/b2/0e/1d/national-memmorial-front.jpg?w=1200&amp;h=-1&amp;s=1" class="card-img" alt="..."&gt;
+        &lt;div class="card-body"&gt;
+        &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+        &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+        &lt;a href="#" class="btn-card"&gt;Go somewhere&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt; 
+      </code> -->
+    </div>
+  </div>
+  </div>
+</body>
+</html>

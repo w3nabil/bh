@@ -29,7 +29,7 @@ body {
     font-size: 16px;
     line-height: 2;
     color: #F8F9F7;
-    background: linear-gradient(#010519 0%, #091032 100%);
+    background-color: #1c1c1c;
     min-height: 100vh;
     width: 100%;
 }
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    color: #ECECEC;
+    color: #f5f5f5;
 }
 
 /* TEXT Alignment */
@@ -64,37 +64,69 @@ p {
 
 
 /* TEXT Color */
-.red {
-    color: #E70202;
+
+.text-white {
+    color: #f5f5f5;
 }
 
-.green {
-    color: #21E702;
+.text-green {
+    color: #28a745; 
 }
 
-.blue {
-    color: #021FE7;
+.text-red {
+    color: #dc3545; 
 }
 
-.yellow {
-    color: #E7E702;
+.text-yellow {
+    color: #ffc107; 
 }
 
-.purple {
-    color: #E702E7;
+.text-blue {
+    color: #17a2b8; 
 }
 
-.orange {
-    color: #E77A02;
+.text-dark {
+    color: #343a40; 
+}
+
+.text-muted {
+    color: #6c757d; 
 }
 
 /* Special Bangladesh Flag color text*/
-.bangladesh {
-    background: linear-gradient(to right, #006a4e, #006a4e 50%, #f42a41 50%, #f42a41);
+
+.text-bangladesh {
+    background: linear-gradient(to right, #006a4e 0%, #006a4e 50%, #f42a41 50%, #f42a41 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
+
+/* TEXT Decoration */
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-overline {
+    text-decoration: overline;
+}
+
+.text-line-through {
+    text-decoration: line-through;
+}
+
+
+/* TEXT Transform */
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
 
 /* display & postion */
 
@@ -125,7 +157,7 @@ p {
 }
 
 /* Themes */
-.dark-theme {
+.white-theme {
     color: #F8F9F7;
     background: linear-gradient(#010519 0%, #091032 100%);
     min-height: 100vh;
@@ -271,7 +303,25 @@ a:hover {
     
 }
 
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
+table tr {
+    border: 1px solid #f5f5f5;
+}
 
+table th {
+    border: 1px solid #f5f5f5;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
 
-
+table td {
+    border: 1px solid #f5f5f5;
+    margin: 0;
+    padding: 5px;
+}
